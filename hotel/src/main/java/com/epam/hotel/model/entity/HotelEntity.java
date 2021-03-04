@@ -31,24 +31,11 @@ public class HotelEntity {
     @Column(name = "phoneNumber")
     private Integer phoneNumber;
 
-    @Column(name = "AVAILABLE_ROOM")
-    private Long availableRoom;
-
     @Column(name = "CITY")
     private String city;
 
-    //    @OneToMany(mappedBy = "hotelEntity", fetch = FetchType.EAGER)
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "hotelId", referencedColumnName = "hotelId")
     private List<RoomEntity> roomEntity;
 
-//   ` @Embedded
-//    @AttributeOverrides({
-//            @AttributeOverride(name = "buildingName", column = @Column(name = "BUILDING_NAME")),
-//            @AttributeOverride(name = "city", column = @Column(name = "CITY")),
-//            @AttributeOverride(name = "state", column = @Column(name = "STATE")),
-//            @AttributeOverride(name = "country", column = @Column(name = "COUNTRY")),
-//            @AttributeOverride(name = "postalCode", column = @Column(name = "POSTAL_CODE"))
-//    })
-//    private AddressEntity address;`
 }

@@ -17,7 +17,6 @@ public class TestData {
                 .city("New Delhi")
                 .phoneNumber(123456)
                 .email("test@test.com")
-                .availableRoom(100L)
                 .roomEntity(Collections.singletonList(roomEntity()))
                 .build();
     }

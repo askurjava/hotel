@@ -29,7 +29,7 @@ public interface HotelApi {
             httpMethod = "GET"
     )
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "hotel information has been fetched successfully", response = HotelResourceDTO.class),
+            @ApiResponse(code = 200, message = "Hotel information has been fetched successfully", response = HotelResourceDTO.class),
             @ApiResponse(code = 400, message = "Business validation fail", response = ErrorMessage.class),
             @ApiResponse(code = 401, message = "Authentication failed."),
             @ApiResponse(code = 403, message = "You are not authorized to do this operation."),
@@ -53,7 +53,7 @@ public interface HotelApi {
             httpMethod = "GET"
     )
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "hotel information has been fetched successfully", response = HotelResourceDTO.class),
+            @ApiResponse(code = 200, message = "Hotel information has been fetched successfully", response = HotelResourceDTO.class),
             @ApiResponse(code = 400, message = "Business validation fail", response = ErrorMessage.class),
             @ApiResponse(code = 401, message = "Authentication failed."),
             @ApiResponse(code = 403, message = "You are not authorized to do this operation."),
